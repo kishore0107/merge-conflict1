@@ -1,0 +1,36 @@
+# Application Configuration
+
+application:
+  name: inventory-service
+  version: 1.0.0
+  environment: development
+  debug: true
+
+server:
+  host: 0.0.0.0
+  port: 8080
+  workers: 4
+  timeout: 30
+
+database:
+  host: localhost
+  port: 5432
+  name: inventory_db
+  pool_size: 10
+  ssl: false
+
+logging:
+  level: INFO
+  file: /var/log/inventory/app.log
+  rotation: daily
+
+security:
+  ssl_enabled: false
+  max_login_attempts: 5
+  session_timeout: 30
+
+cache:
+  enabled: true
+  host: localhost
+  port: 6379
+  ttl: 300
