@@ -3,7 +3,7 @@
 application:
   name: inventory-service
   version: 1.0.0
-  environment: development
+  environment: Production
   debug: true
 
 server:
